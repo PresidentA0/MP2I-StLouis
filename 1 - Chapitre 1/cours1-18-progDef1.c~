@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <assert.h>
+#include <math.h>
+#include <stdlib.h>
+
+// Mauvaise pratique:
+
+int intSqrt (double x)
+    // x est positif.
+{
+    return ((int)(sqrt(x))) ;
+}
+
+
+int main ()
+{
+  double x ;
+  printf("Entrez un flottant positif: ");
+  scanf("%lf",&x) ;
+  printf("La racine carree entiere de %lf est %d",x,intSqrt(x)) ;
+}
